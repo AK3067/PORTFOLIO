@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Arpit Kumar — AI & Data Science student from Punjab. Car lover. Portfolio with projects & progress." />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Arpit Kumar</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="login-btn" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="title glow">Driven by Data, Powered by Passion</h1>
+      <p class="subtitle">Arpit Kumar • B.Sc (H) Artificial Intelligence & Data Science • Car Enthusiast</p>
+      <div class="cta">
+        <a href="#projects" class="btn">View Garage</a>
+        <a href="#about" class="btn ghost">Driver Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Driver Profile</h2>
+      <div class="card about-card">
+        <div class="about-col">
+          <p>
+            I’m <strong>Arpit Kumar</strong> from <strong>Punjab</strong>, currently pursuing
+            <strong>B.Sc (H) Artificial Intelligence & Data Science</strong>.
+            I love building practical ML/DS projects in Python — with a classic car twist.
+          </p>
+          <ul class="about-badges">
+            <li>Python for Data Science</li>
+            <li>Machine Learning</li>
+            <li>EDA & Visualization</li>
+            <li>Git/GitHub</li>
+          </ul>
+        </div>
+        <div class="about-col small">
+          <div class="license">
+            <div class="license-title">Driver’s License</div>
+            <div class="license-row"><span>ID</span><b>AK-DS-AI-01</b></div>
+            <div class="license-row"><span>From</span><b>Punjab, IN</b></div>
+            <div class="license-row"><span>Status</span><b>Open to internships & collabs</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section tint">
+    <div class="container">
+      <h2 class="section-title">Systems Readings</h2>
+      <div class="gauges">
+        <div class="gauge" data-value="90"><span>Python</span></div>
+        <div class="gauge" data-value="85"><span>Data Science</span></div>
+        <div class="gauge" data-value="80"><span>Machine Learning</span></div>
+        <div class="gauge" data-value="70"><span>Visualization</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="projects-head">
+        <h2 class="section-title">Garage — Projects</h2>
+        <p class="muted">Add/edit via Admin panel. Logos supported.</p>
+      </div>
+      <div id="projectGrid" class="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section tint">
+    <div class="container">
+      <h2 class="section-title">Navigation — Contact</h2>
+      <div class="contact-grid">
+        <a class="btn" href="mailto:your@email.com">Email</a>
+        <a class="btn ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="#" title="Resume link">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Arpit Kumar • Classic car themed portfolio
+    </div>
+  </footer>
+
+  <!-- Loader (speedometer vibe) -->
+  <div id="loader" class="loader hidden">
+    <div class="dial"></div>
+    <p>Loading...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
