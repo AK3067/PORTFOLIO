@@ -1,5 +1,5 @@
 // ===== Global Config =====
-const ADMIN_EMAIL = "arpit@3067"; // <- change to your email
+const ADMIN_EMAIL = "AK3067"; // <- change to your email
 const ADMIN_PASS  = "AK47BLACK"; // <- change to your password
 const STORAGE_KEY = "arpit_projects_v1";
 
