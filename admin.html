@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — Arpit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Admin • Arpit</div>
+      <nav>
+        <a class="danger" href="login.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container admin-grid">
+      <!-- Resume Management -->
+      <div class="card admin-form">
+        <h2>Resume Management</h2>
+        <label class="label">Upload Resume (PDF)</label>
+        <input type="file" id="resumeInput" accept=".pdf" />
+        <div class="actions">
+          <button id="uploadResumeBtn" class="btn">Upload Resume</button>
+          <button id="deleteResumeBtn" class="btn danger">Delete Resume</button>
+        </div>
+        <div id="resumeAlert" class="alert hidden">Resume updated!</div>
+      </div>
+
+      <!-- Form -->
+      <div class="card admin-form">
+        <h2>Add / Edit Project</h2>
+        <label class="label">Project Logo</label>
+        <input type="file" id="logoInput" accept="image/*" />
+
+        <label class="label">Project Title</label>
+        <input type="text" id="titleInput" placeholder="e.g., Car Price Predictor (ML)" />
+
+        <label class="label">Short Description</label>
+        <textarea id="descInput" rows="3" placeholder="Brief project summary..."></textarea>
+
+        <label class="label">Link (optional)</label>
+        <input type="url" id="linkInput" placeholder="https://github.com/..." />
+
+        <label class="label">Completion %</label>
+        <input type="number" id="percentInput" min="0" max="100" value="0" />
+
+        <div class="actions">
+          <button id="saveBtn" class="btn">Save Project</button>
+          <button id="resetBtn" class="btn ghost">Reset</button>
+        </div>
+
+        <div id="formAlert" class="alert hidden">Saved!</div>
+      </div>
+
+      <!-- Live Preview -->
+      <div class="card preview">
+        <h2>Live Preview</h2>
+        <div class="project-card">
+          <div class="project-thumb"><img id="previewLogo" src="images/placeholder.png" alt="logo" /></div>
+          <div class="project-body">
+            <div class="project-title" id="previewTitle">Project Title</div>
+            <p class="project-desc" id="previewDesc">Project details will appear here.</p>
+            <div class="progress">
+              <div class="progress-bar" id="previewBar" style="width:0%"></div>
+            </div>
+            <div class="project-meta">
+              <a id="previewLink" href="#" target="_blank" class="link muted">Link</a>
+              <span class="muted">•</span>
+              <span class="muted" id="previewPct">0% complete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Existing projects -->
+    <div class="container">
+      <h3 class="section-subtitle">Your Projects</h3>
+      <div id="adminList" class="project-grid"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
